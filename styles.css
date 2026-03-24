@@ -1,15 +1,15 @@
 :root {
-  --bg: #0b0d10;
-  --bg-soft: #111419;
-  --bg-elevated: rgba(255, 255, 255, 0.04);
-  --surface: #161b22;
-  --surface-strong: #1e252d;
-  --text: #eef1f5;
-  --muted: #a8b0bb;
-  --line: rgba(255, 255, 255, 0.1);
+  --bg: #f3f4f6;
+  --bg-soft: #ebedf0;
+  --bg-elevated: rgba(255, 255, 255, 0.82);
+  --surface: #ffffff;
+  --surface-strong: #e8ebef;
+  --text: #171a1f;
+  --muted: #5f6875;
+  --line: rgba(23, 26, 31, 0.1);
   --accent: #caa46a;
   --accent-soft: rgba(202, 164, 106, 0.16);
-  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --shadow: 0 20px 60px rgba(16, 24, 40, 0.08);
   --radius: 24px;
   --radius-sm: 16px;
   --container: 1180px;
@@ -31,9 +31,8 @@ body {
   font-family: "Inter", Arial, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top right, rgba(202, 164, 106, 0.12), transparent 28%),
-    radial-gradient(circle at left center, rgba(255, 255, 255, 0.06), transparent 24%),
-    linear-gradient(180deg, #090b0e 0%, #0b0d10 100%);
+    radial-gradient(circle at top right, rgba(202, 164, 106, 0.08), transparent 28%),
+    linear-gradient(180deg, #f7f8fa 0%, #f1f3f6 100%);
   line-height: 1.6;
 }
 
@@ -72,7 +71,7 @@ textarea {
   right: -8rem;
   width: 18rem;
   height: 18rem;
-  background: rgba(202, 164, 106, 0.14);
+  background: rgba(202, 164, 106, 0.07);
 }
 
 .site-shell::after {
@@ -80,7 +79,7 @@ textarea {
   left: -7rem;
   width: 16rem;
   height: 16rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .container {
@@ -93,8 +92,8 @@ textarea {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(16px);
-  background: rgba(11, 13, 16, 0.72);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(243, 244, 246, 0.86);
+  border-bottom: 1px solid rgba(23, 26, 31, 0.06);
 }
 
 .header-inner {
@@ -160,7 +159,7 @@ textarea {
   padding: 0.75rem 1rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.78);
 }
 
 .menu-toggle {
@@ -170,7 +169,7 @@ textarea {
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.82);
   color: var(--text);
   cursor: pointer;
 }
@@ -278,7 +277,7 @@ h3 {
 
 .button-secondary {
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .button-full {
@@ -321,8 +320,8 @@ h3 {
   border: 1px solid var(--line);
   border-radius: calc(var(--radius) + 4px);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
-    rgba(255, 255, 255, 0.02);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 248, 250, 0.96)),
+    rgba(255, 255, 255, 0.88);
   box-shadow: var(--shadow);
 }
 
@@ -377,7 +376,7 @@ h3 {
 .panel-metrics article {
   padding: 1rem;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(17, 24, 39, 0.04);
 }
 
 .metric-value {
@@ -397,13 +396,13 @@ h3 {
 }
 
 .section-muted {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(235, 237, 240, 0.4));
 }
 
 .section-dark {
   background:
-    radial-gradient(circle at top left, rgba(202, 164, 106, 0.09), transparent 30%),
-    #0d1015;
+    radial-gradient(circle at top left, rgba(202, 164, 106, 0.08), transparent 30%),
+    #eceef1;
 }
 
 .section-heading {
@@ -461,7 +460,7 @@ h3 {
 .engagement-card:hover {
   transform: translateY(-4px);
   border-color: rgba(202, 164, 106, 0.3);
-  background: rgba(255, 255, 255, 0.055);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .service-card p,
@@ -482,8 +481,8 @@ h3 {
   padding: 0.7rem 0.9rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  color: #d7dce3;
-  background: rgba(255, 255, 255, 0.02);
+  color: #424c58;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .philosophy-grid {
@@ -509,7 +508,7 @@ h3 {
 
 .contact-details a,
 .footer-links a {
-  color: #f2f4f8;
+  color: var(--text);
 }
 
 .contact-form {
@@ -520,7 +519,7 @@ h3 {
 .contact-form label {
   display: block;
   margin-bottom: 1rem;
-  color: #e0e6ed;
+  color: #242a33;
   font-size: 0.95rem;
 }
 
@@ -529,9 +528,9 @@ h3 {
   width: 100%;
   margin-top: 0.55rem;
   padding: 0.95rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(23, 26, 31, 0.12);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.95);
   color: var(--text);
 }
 
@@ -554,7 +553,8 @@ h3 {
 
 .site-footer {
   padding: 2rem 0 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(23, 26, 31, 0.08);
+  background: rgba(255, 255, 255, 0.45);
 }
 
 .footer-inner {
@@ -600,7 +600,7 @@ h3 {
     padding: 1rem;
     border: 1px solid var(--line);
     border-radius: var(--radius-sm);
-    background: rgba(14, 17, 22, 0.96);
+    background: rgba(247, 248, 250, 0.98);
     box-shadow: var(--shadow);
   }
 
